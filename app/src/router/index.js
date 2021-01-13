@@ -13,6 +13,7 @@ import SampleJavascript from '@/components/SampleJavascript'
 import LocalFilter from '@/components/LocalFilter'
 import GlobalFilter from '@/components/GlobalFilter'
 import JoinFilter from '@/components/JoinFilter'
+import FilterArgs from '@/components/FilterArgs'
 
 Vue.use(Router)
 
@@ -82,6 +83,11 @@ export default new Router({
       path: '/joinfilter',
       name: 'JoinFilter',
       component: JoinFilter
+    },
+    {
+      path: '/filterArgs',
+      name: 'FilterArgs',
+      component: FilterArgs
     }
   ]
 })

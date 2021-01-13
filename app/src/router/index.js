@@ -10,6 +10,7 @@ import VHtml from '@/components/VHtml'
 import VCloak from '@/components/VCloak'
 import VText from '@/components/VText'
 import SampleJavascript from '@/components/SampleJavascript'
+import LocalFilter from '@/components/LocalFilter'
 
 Vue.use(Router)
 
@@ -64,6 +65,11 @@ export default new Router({
       path: '/v-js',
       name: 'SampleJavascript',
       component: SampleJavascript
+    },
+    {
+      path: '/l-filter',
+      name: 'LocalFilter',
+      component: LocalFilter
     }
   ]
 })

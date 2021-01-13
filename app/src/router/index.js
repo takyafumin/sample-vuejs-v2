@@ -9,6 +9,7 @@ import VPre from '@/components/VPre'
 import VHtml from '@/components/VHtml'
 import VCloak from '@/components/VCloak'
 import VText from '@/components/VText'
+import SampleJavascript from '@/components/SampleJavascript'
 
 Vue.use(Router)
 
@@ -58,6 +59,11 @@ export default new Router({
       path: '/v-text',
       name: 'VText',
       component: VText
+    },
+    {
+      path: '/v-js',
+      name: 'SampleJavascript',
+      component: SampleJavascript
     }
   ]
 })

@@ -11,6 +11,7 @@ import VCloak from '@/components/VCloak'
 import VText from '@/components/VText'
 import SampleJavascript from '@/components/SampleJavascript'
 import LocalFilter from '@/components/LocalFilter'
+import GlobalFilter from '@/components/GlobalFilter'
 
 Vue.use(Router)
 
@@ -70,6 +71,11 @@ export default new Router({
       path: '/l-filter',
       name: 'LocalFilter',
       component: LocalFilter
+    },
+    {
+      path: '/g-filter',
+      name: 'GlobalFilter',
+      component: GlobalFilter
     }
   ]
 })

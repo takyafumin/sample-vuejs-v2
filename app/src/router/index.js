@@ -8,6 +8,7 @@ import VOnce from '@/components/VOnce'
 import VPre from '@/components/VPre'
 import VHtml from '@/components/VHtml'
 import VCloak from '@/components/VCloak'
+import VText from '@/components/VText'
 
 Vue.use(Router)
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/v-cloak',
       name: 'VCloak',
       component: VCloak
+    },
+    {
+      path: '/v-text',
+      name: 'VText',
+      component: VText
     }
   ]
 })

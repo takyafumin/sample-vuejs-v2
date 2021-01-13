@@ -12,6 +12,7 @@ import VText from '@/components/VText'
 import SampleJavascript from '@/components/SampleJavascript'
 import LocalFilter from '@/components/LocalFilter'
 import GlobalFilter from '@/components/GlobalFilter'
+import JoinFilter from '@/components/JoinFilter'
 
 Vue.use(Router)
 
@@ -76,6 +77,11 @@ export default new Router({
       path: '/g-filter',
       name: 'GlobalFilter',
       component: GlobalFilter
+    },
+    {
+      path: '/joinfilter',
+      name: 'JoinFilter',
+      component: JoinFilter
     }
   ]
 })

@@ -1,6 +1,11 @@
 <template>
   <div>
-    <pre>{{ $data }}</pre>
+    <h2>Bitcoin Price</h2>
+    <ul v-cloak>
+      <li v-for="(rate, currency) in bpi" v-bind:key="currency">
+        {{ currency }}: {{ rate.rate_float | currencyDecimal }}
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -19,6 +24,17 @@ export default {
       .then(function (response) {
         this.bpi = response.data.bpi
       }.bind(this))
+  },
+  filters: {
+    currencyDecimal (value) {
+      return value.toFixed(2)
+    }
   }
 }
 </script>
+
+<style scoped>
+[v-cloak] {
+  display: none;
+}
+</style>

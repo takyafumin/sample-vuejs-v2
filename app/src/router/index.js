@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import SampleArray from '@/components/SampleArray'
 import TodoApp from '@/components/TodoApp'
 import BitCoinApp from '@/components/BitCoinApp'
+import VOnce from '@/components/VOnce'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/coin',
       name: 'BitCoinApp',
       component: BitCoinApp
+    },
+    {
+      path: '/v-once',
+      name: 'VOnce',
+      component: VOnce
     }
   ]
 })

@@ -6,6 +6,7 @@ import TodoApp from '@/components/TodoApp'
 import BitCoinApp from '@/components/BitCoinApp'
 import VOnce from '@/components/VOnce'
 import VPre from '@/components/VPre'
+import VHtml from '@/components/VHtml'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/v-pre',
       name: 'VPre',
       component: VPre
+    },
+    {
+      path: '/v-html',
+      name: 'VHtml',
+      component: VHtml
     }
   ]
 })

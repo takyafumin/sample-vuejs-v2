@@ -5,6 +5,7 @@ import SampleArray from '@/components/SampleArray'
 import TodoApp from '@/components/TodoApp'
 import BitCoinApp from '@/components/BitCoinApp'
 import VOnce from '@/components/VOnce'
+import VPre from '@/components/VPre'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/v-once',
       name: 'VOnce',
       component: VOnce
+    },
+    {
+      path: '/v-pre',
+      name: 'VPre',
+      component: VPre
     }
   ]
 })

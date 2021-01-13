@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import SampleArray from '@/components/SampleArray'
+import TodoApp from '@/components/TodoApp'
 
 Vue.use(Router)
 
@@ -16,6 +17,11 @@ export default new Router({
       path: '/array',
       name: 'Array',
       component: SampleArray
+    },
+    {
+      path: '/todo',
+      name: 'TodoApp',
+      component: TodoApp
     }
   ]
 })

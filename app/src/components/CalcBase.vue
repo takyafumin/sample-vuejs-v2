@@ -9,6 +9,10 @@
       {{ reversedMessage }}
     </p>
 
+    <p>
+      {{ reversedMessageMethod() }}
+    </p>
+
   </div>
 </template>
 
@@ -22,6 +26,11 @@ export default {
   },
   computed: {
     reversedMessage: function () {
+      return this.message.split('').reverse().join('')
+    }
+  },
+  methods: {
+    reversedMessageMethod: function () {
       return this.message.split('').reverse().join('')
     }
   }

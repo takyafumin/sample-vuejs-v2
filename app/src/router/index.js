@@ -14,6 +14,7 @@ import LocalFilter from '@/components/LocalFilter'
 import GlobalFilter from '@/components/GlobalFilter'
 import JoinFilter from '@/components/JoinFilter'
 import FilterArgs from '@/components/FilterArgs'
+import CalcBase from '@/components/CalcBase'
 
 Vue.use(Router)
 
@@ -88,6 +89,11 @@ export default new Router({
       path: '/filterArgs',
       name: 'FilterArgs',
       component: FilterArgs
+    },
+    {
+      path: '/calc/base',
+      name: 'CalcBase',
+      component: CalcBase
     }
   ]
 })
